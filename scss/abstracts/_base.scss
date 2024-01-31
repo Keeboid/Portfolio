@@ -1,6 +1,6 @@
-body {
-    background: linear-gradient(359deg, #a27ea7, #7abec1);
-    background-size: 400% 400%;
+.container__main {
+    background: linear-gradient(359deg, $purple-01, $blue-01);
+    background-size: 1000% 1000%;
 
     animation: PGradient 30s ease infinite;
 }

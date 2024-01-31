@@ -1,2 +1,40 @@
+//Gradient colors
+
 $purple-01: #a27ea7;
 $blue-01: #7abec1;
+
+//Palette colors
+
+$dark-blue-01: #27187E; 
+$dark-lavender-01: #758BFD;
+$lavender-01: #AEB8FE;
+$cream-01: #F1F2F6;
+$orange-01: #FF8600;
+
+//Global colors
+
+$white: #fff;
+$black: #000;
+
+$dark-grey: #323544;
+$darker-grey: #212330;
+$label-grey: #272936;
+
+
+
+// Consistent container widths for each of the 3 bps
+$container-width: (
+	small: 750px, 
+	medium: 970px, 
+	large: 1200px
+);
+
+// Breakpoint values for consistency
+$breakpoints: (
+	narrow-to-medium: 768px,
+	medium-to-wide: 992px, 
+	wide-to-extra-wide: 1260px
+);
+
+// Gaps for containers across layout
+$gap: 2rem;

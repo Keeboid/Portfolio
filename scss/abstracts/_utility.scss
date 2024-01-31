@@ -1,0 +1,42 @@
+.css-selector {
+    background: linear-gradient(359deg, #a27ea7, #7abec1);
+    background-size: 400% 400%;
+
+    animation: PGradient 30s ease infinite;
+}
+
+@keyframes PGradient {
+    0%{background-position:0% 76%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 76%}
+}
+
+//
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box; //futureproofing 
+}
+
+body {
+    position: relative; // Make body a container
+    margin: 0;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.025em;
+    line-height: 1.42857143;
+
+    // 
+    // fixes for potential MacOS issues with elements showing oddly when scrolling too far up
+    overscroll-behavior: none;
+
+    h1 {
+        font-weight: 600;
+    }
+
+    p {
+        font-weight: 300;
+    }
+}

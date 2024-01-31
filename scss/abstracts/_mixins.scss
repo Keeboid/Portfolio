@@ -1,12 +1,18 @@
-.css-selector {
-    background: linear-gradient(359deg, #a27ea7, #7abec1);
-    background-size: 400% 400%;
 
-    animation: PGradient 30s ease infinite;
+// ===== ALL MIXINS =====//
+
+//=====BREAKPOINT MIXINS=====//
+
+// For handling media query syntax 
+@mixin breakpoint($name) {
+    @if map-has-key($breakpoints, $name) {
+        @media (min-width: map-get($breakpoints, $name)) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Unknown breakpoint: #{$name}.";
+    }
 }
 
-@keyframes PGradient {
-    0%{background-position:0% 76%}
-    50%{background-position:100% 25%}
-    100%{background-position:0% 76%}
-}
