@@ -1,0 +1,27 @@
+// ==========================================================================
+// Global Imports
+// ==========================================================================
+
+
+// Abstract files
+// Variables, mixins, similar components
+@import "abstracts/all";
+
+// Core files
+// Typography, reset, global code
+@import "core/all";
+
+// Components
+// Buttons, carousels, etc
+@import "components/all";
+
+// Layout
+// Header, Footer
+@import "layout/all";
+
+// Sections
+// Other Sections (Update when added to)
+@import "sections/all";
+
+//Pages 
+@import 'pages/all';
