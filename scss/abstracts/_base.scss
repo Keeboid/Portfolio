@@ -1,6 +1,7 @@
 .container__main {
-    background: linear-gradient(359deg, $purple-01, $blue-01);
+    //background: linear-gradient(359deg, $purple-01, $blue-01);
     background-size: 1000% 1000%;
+    background: $blue-01;
 
-    animation: PGradient 30s ease infinite;
+    //animation: PGradient 30s ease infinite;
 }
