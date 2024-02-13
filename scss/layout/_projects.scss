@@ -1,0 +1,41 @@
+.projects__flex-container--parent {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+    justify-content: space-between;
+
+//default - cards expand to full width
+
+>* {
+    flex-basis: 100%;
+}
+
+> :last-child {
+
+    @include breakpoint(narrow-to-medium) {
+        display:none; //hides last child (card) from display
+    }
+
+    @include breakpoint(wide-to-extra-wide){
+        //if enough space, display last child card
+        display: block;
+        max-width: calc(32% - #{$gap} /3);
+    }
+}
+
+//targeting first 2 cards 
+
+> :nth-child(-n+2) {
+    
+    @include breakpoint(narrow-to-medium) {
+        //becomes row of two 
+        max-width: calc(50% - #{$gap} /2);
+    }
+
+    @include breakpoint(wide-to-extra-wide) {
+        max-width: calc(32% - #{$gap} /3); //allows for 3rd card in row
+    }
+}
+
+}
