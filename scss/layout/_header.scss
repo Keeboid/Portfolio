@@ -36,6 +36,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
+    p {
+        text-align: center;
+    }
+
 }
 
 .side__header {
@@ -55,4 +60,8 @@
     transition: 0.5s;
    // z-index: 5;
 
+}
+
+.main__heading {
+    text-align: center;
 }

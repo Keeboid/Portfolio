@@ -53,10 +53,8 @@
 <div class="container__main">
   <div class="container__main heading__container">
    
-<h1 class="main__heading">My Name is [REDACTED]</h1>
-<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-    Nostrum nobis at reprehenderit ab eos, 
-    nisi eum officia dolorum pariatur maxime quis corrupti iusto laudantium deserunt dolor maiores commodi saepe dolores. </p>
+<h1 class="main__heading">My Name is Molly Keeble</h1>
+<p> Webbed Developer </p>
 
   </div>
 </div>
@@ -195,29 +193,57 @@ a
 
 <!--Contact-->
 <div class="container__main">
-<form action="/">
-    <h1>Contact Me</h1>
-    <div class="info">
-    <input class="fname" type="text" name="name" placeholder="First name">
-    <input class="lname" type="text" name="name" placeholder="Last name">
-    <input type="text" name="name" placeholder="Email">
-    <input type="text" name="name" placeholder="Phone number">
-    <input type="text" name="name" placeholder="Website">
-    </div>
-    <p>Message</p>
-    <div>
-    <textarea rows="4"></textarea>
-    </div>
-    <div class="btn__submit">  
-        <button class="btn"><span>Submit</span></button>
-          
-            
+
+    <div class="contact__container-parent" id="contact">
+        <div class="contact-me">
+            <h3>Contact Me</h3>
         </div>
-    </form>
+        <div class="contact-form">
+            <div id="error"></div>
+            <form id="contact-form" name="contactForm" action="/" method="post">
+                <div class="contact__content">
+                    <div class="input__first-name">
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name *">
+                        <small></small>
+                    </div>
+
+                    <div class="input__last-name">
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name *">
+                        <small></small>
+                    </div>
+
+                    <div class="input__email">
+                        <input type="text" id="email" name="email" placeholder="Email Address *">
+                        <small></small>
+                    </div>
+
+                    <div class="input__phone">
+                        <input type="tel" id="phone" name="phone-number" placeholder="Phone Number (Optional)">
+                        <small></small>
+                    </div>
+
+                    <div class="input__subject">
+                        <input type="text" id="subject" name="subject" placeholder="Subject (Optional)">
+                        <small></small>
+                    </div>
+
+                    <div class="input__message">
+                        <textarea id="message" name="message" placeholder="Message (Optional)"></textarea>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button type="submit" id="submit-btn" class="btn-submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        
     </div>
 </div>
 
 </body>
 
+<footer>
+    Placeholder for footer
+</footer>
 
 </html>
