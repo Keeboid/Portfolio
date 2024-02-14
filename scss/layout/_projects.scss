@@ -1,4 +1,4 @@
-.projects__flex-container--parent, .projects-card {
+.projects__flex-container--parent{
 
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +38,7 @@
     }
 
     @include breakpoint(wide-to-extra-wide) {
-        max-width: calc(32% - #{$gap} /3); //allows for 3rd card in row
+        max-width: calc(32% - #{$gap} /1); //allows for 3rd card in row
     }
 }
 
@@ -49,18 +49,34 @@
 .projects-card {
     display: flex;
     flex-direction: column;
-   justify-content: space-between;
+   justify-content: center;
     border: 1ex solid $jacarta;
 
     img {
-        max-width: 345%;
+        max-width: 100%;
         overflow: clip;
         display: block;
         //width: 100%;
     }
 
     @include breakpoint(wide-to-extra-wide){
-        max-width: 33%;
+        max-width: 31%;
         //flex-direction: row;
    }
+}
+
+.block-2 {
+
+    img {
+        border-top: 23px solid $jacarta;
+        padding: 0px;
+    }
+}
+
+.block-3 {
+
+    img {
+        border-top: 2px solid $jacarta;
+        padding: 0px;
+    }
 }
