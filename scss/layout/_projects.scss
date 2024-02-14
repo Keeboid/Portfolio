@@ -1,9 +1,13 @@
-.projects__flex-container--parent {
+.projects__flex-container--parent, .projects-card {
 
     display: flex;
     flex-wrap: wrap;
     gap: $gap;
     justify-content: space-between;
+
+    @include breakpoint(wide-to-extra-wide){
+        flex-direction: row;
+    }
 
 //default - cards expand to full width
 
@@ -38,4 +42,25 @@
     }
 }
 
+}
+
+//
+
+.projects-card {
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+    border: 1ex solid $jacarta;
+
+    img {
+        max-width: 345%;
+        overflow: clip;
+        display: block;
+        //width: 100%;
+    }
+
+    @include breakpoint(wide-to-extra-wide){
+        max-width: 33%;
+        //flex-direction: row;
+   }
 }
