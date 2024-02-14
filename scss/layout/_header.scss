@@ -36,9 +36,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+
     p {
         text-align: center;
+        color: $amethyst;
     }
 
 }
@@ -64,4 +65,6 @@
 
 .main__heading {
     text-align: center;
+    font-size: 5rem;
+    color: $jacarta;
 }
