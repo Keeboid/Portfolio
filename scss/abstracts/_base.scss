@@ -1,11 +1,12 @@
 .container__main {
-    //background: linear-gradient(359deg, $purple-01, $blue-01);
+
     background-size: 1000% 1000%;
     background: $soft-peach;
+    margin: 0;
+    padding: 2rem;
 
-    //animation: PGradient 30s ease infinite;
-}
-
-.container__main {
-    margin-left: 19.44%;
+    @include breakpoint(wide-to-extra-wide){
+        margin-left: 19.44%;
+    }
+    
 }

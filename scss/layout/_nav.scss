@@ -1,6 +1,9 @@
 
 .side__nav {
 
+display: none;
+
+@include breakpoint(wide-to-extra-wide){
 display: flex;
 flex-direction: column;
 width: 16rem;
@@ -10,8 +13,7 @@ border-right: 0.5rem solid $salmon;
 background-color: $jacarta;
 margin-top: 0;
 transition: 0.5s;
-//z-index: 5;
-
+   }
 }
 
 .side__nav-flex-container {
