@@ -2,6 +2,8 @@
     color: $jacarta;
     font-size: 2.5rem;
     text-align: center;
+    	
+text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
 }
 
 .contact__content {
@@ -116,6 +118,9 @@ input, textarea {
         margin-top: 2rem;
         align-items: center;
         margin: auto;
+        font-family: 'Noto Sans';
+        //text-transform: uppercase;
+        font-weight: 600;
     }
     .btn-submit:hover{
         background-color: $salmon;

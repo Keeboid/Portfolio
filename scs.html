@@ -1,16 +1,94 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mo Keeble | Web Development Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/application.css'>
+    <!--FONTS weights: 100, 300, 600, -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,600;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;600&display=swap" rel="stylesheet">
+   
+</head>
 
+<!--Side bar-->
+
+<aside>
+<nav class="side__header nav__hidden side__nav">
+
+    <img src="img/logo-color2.png" class="profile__img">
+
+    <div class="side__nav-flex-container">
+
+        <ul class="nav__pages-list" style="display: block;">
+            <li class="nav__pages-list-item"><a href="#">About</a></li>
+            <li class="nav__pages-list-item"><a href="#projects">Portfolio</a></li>
+            <li class="nav__pages-list-item"><a href="#">Coding Examples</a></li>
+            <li class="nav__pages-list-item"><a href="scs.html">SCS Scheme</a></li>
+            <li class="nav__pages-list-item"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <ul class="nav__sm-list">
+            <li class="nav__pages-list-item--sm"><a href="https://www.linkedin.com/in/molly-keeble/">LinkedIn</a></li>
+            <li class="nav__pages-list-item--sm"><a href="#">GitHub</a></li>
+        </ul>
+
+    </div>
+
+</nav>
+</aside>
+
+
+<!--Main-->
 <body>
 
-    Introduction to Scion Coalition Scheme
-The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive in a short space of time.
+<div class="container__main">
+  <div class="container__main heading__container">
+   
+<h1 class="main__heading">My Name is Molly Keeble</h1>
+<p> Web Developer </p>
 
-Treehouse
+  </div>
+</div>
+
+<!--Projects Examples-->
+
+<div class="container__main">
+  <div class="projects__title">
+
+    <h2>The SCS Scion Scheme</h2>
+
+  </div>
+</div>
+
+<!--SCS Scheme-->
+
+<div class="container__main">
+
+<P class="SCS__text-main">
+
+<div class="SCS__p-1">
+    <div class="SCS__heading">Introduction to Scion Coalition Scheme</div>
+The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive in a short space of time.
+</div>
+
+<div class="SCS__p-2">
+    <div class="SCS__heading">Treehouse</div>
 Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they?ve covered in certain areas.
 Total Score
 teamtreehouse.com/xxxxx
+</div>
 
-About Netmatters
+<div class="SCS__p-3">
+<div class="SCS__heading">  About Netmatters </div>
 Established in 2008
 Norfolk's leading technology company
 Winner of the Princess Royal Training Award
@@ -18,7 +96,66 @@ Winner of EDP Skills of Tomorrow Award
 80+ staff, 2 locations across Norfolk
 Digital Marketing, Website & Software development & IT Support
 Broad spectrum of clients, working nationwide
-Operate to strict company values
+Operate to strict company values.
+</div>
+</P>
 
+</div>
+
+
+<!--Contact-->
+<div class="container__main">
+
+    <div class="contact__container-parent" id="contact">
+        <div class="contact-me">
+            <h3>Contact Me</h3>
+        </div>
+        <div class="contact-form">
+            <div id="error"></div>
+            <form id="contact-form" name="contactForm" action="/" method="post">
+                <div class="contact__content">
+                    <div class="input__first-name">
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name *">
+                        <small></small>
+                    </div>
+
+                    <div class="input__last-name">
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name *">
+                        <small></small>
+                    </div>
+
+                    <div class="input__email">
+                        <input type="text" id="email" name="email" placeholder="Email Address *">
+                        <small></small>
+                    </div>
+
+                    <div class="input__phone">
+                        <input type="tel" id="phone" name="phone-number" placeholder="Phone Number (Optional)">
+                        <small></small>
+                    </div>
+
+                    <div class="input__subject">
+                        <input type="text" id="subject" name="subject" placeholder="Subject (Optional)">
+                        <small></small>
+                    </div>
+
+                    <div class="input__message">
+                        <textarea id="message" name="message" placeholder="Message (Optional)"></textarea>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button type="submit" id="submit-btn" class="btn-submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+</div>
 
 </body>
+
+<footer>
+    Placeholder for footer
+</footer>
+
+</html>
