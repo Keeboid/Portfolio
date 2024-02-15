@@ -24,7 +24,8 @@
     @include breakpoint(wide-to-extra-wide){
         //if enough space, display last child card
         display: block;
-        max-width: calc(32% - #{$gap} /3);
+        //max-width: calc(31% - #{$gap} /3);
+        max-width: 31%;
     }
 }
 
@@ -38,7 +39,8 @@
     }
 
     @include breakpoint(wide-to-extra-wide) {
-        max-width: calc(32% - #{$gap} /1); //allows for 3rd card in row
+        //max-width: calc(31% - #{$gap} /1); //allows for 3rd card in row
+        max-width: 31%;
     }
 }
 
