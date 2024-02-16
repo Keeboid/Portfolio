@@ -55,13 +55,14 @@
     border: 1ex solid $jacarta;
     border-radius: 5px 5px 0px 0px;
     box-shadow: 5px 5px 0px rgba(206, 108, 43, 0.2);
+    position: relative;
+    top: 0;
 
     //box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
 
     &:hover {
         transition: top 0.5s;
         top: -10px;
-    
     }
 
 
